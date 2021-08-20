@@ -1,0 +1,49 @@
+@mixin breakpoint($point) {
+  @if $point == Dxxxl {
+    @media (max-width: 2560px) {
+      @content;
+    }
+  }
+
+  @if $point == Dxxl {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @if $point == Dxl {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+
+  @if $point == Dlg {
+    @media (max-width: 1537px) {
+      @content;
+    }
+  }
+
+  @if $point == Dmd {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $point == Dsm {
+    @media (max-width: 1367px) {
+      @content;
+    }
+  }
+
+  @if $point == Dxs {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $point == Ds {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
